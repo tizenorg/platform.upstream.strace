@@ -1,0 +1,13 @@
+--- strace-4.5.20/util.c.orig	2010-02-04 23:40:57.000000000 +0100
++++ strace-4.5.20/util.c	2010-04-15 14:26:42.697554000 +0200
+@@ -1292,9 +1292,8 @@ arg_setup(struct tcb *tcp, arg_setup_sta
+ 
+ 	sof = (cfm >> 0) & 0x7f;
+ 	sol = (cfm >> 7) & 0x7f;
+-	bsp = (long) ia64_rse_skip_regs((unsigned long *) bsp, -sof + sol);
++	*state = ia64_rse_skip_regs((unsigned long *) bsp, -sof + sol);
+ 
+-	*state = (unsigned long *) bsp;
+ 	return 0;
+ }
+ 
