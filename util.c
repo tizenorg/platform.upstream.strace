@@ -1279,9 +1279,8 @@ arg_setup(struct tcb *tcp, arg_setup_state *state)
 
 	sof = (cfm >> 0) & 0x7f;
 	sol = (cfm >> 7) & 0x7f;
-	bsp = (long) ia64_rse_skip_regs((unsigned long *) bsp, -sof + sol);
+	*state = ia64_rse_skip_regs((unsigned long *) bsp, -sof + sol);
 
-	*state = (unsigned long *) bsp;
 	return 0;
 }
 
