@@ -11,6 +11,7 @@ Url:            http://sourceforge.net/projects/strace/
 Group:          Development/Tools/Debuggers
 Source:         http://dl.sourceforge.net/strace/strace-%{version}.tar.xz
 Source2:        baselibs.conf
+Source1001: 	strace.manifest
 
 %description
 With strace, you can trace the activity of a program.  Information
@@ -19,6 +20,7 @@ and processes can be seen.  Child processes can also be tracked.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 export CFLAGS="%{optflags}"
@@ -36,6 +38,7 @@ make check
 %make_install
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %{_bindir}/strace
 %{_bindir}/strace-graph
