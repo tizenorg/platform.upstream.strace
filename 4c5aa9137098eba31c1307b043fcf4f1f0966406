@@ -1,0 +1,9 @@
+Change-Id: I4c5aa9137098eba31c1307b043fcf4f1f0966406
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Code-Review+1: Patrick McCarty <patrick.mccarty@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:36:31 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4935
+Project: platform/upstream/strace
+Branch: refs/heads/tizen
