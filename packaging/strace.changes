@@ -1,0 +1,8 @@
+* Sun Aug 25 2013 Chengwei Yang <chengwei.yang@intel.com> accepted/tizen/20130710.214633@4c5aa91
+- resetting manifest requested domain to floor
+- cleanup
+- fixes
+- spec cleanup
+- add packaging
+- Imported Upstream version 4.7
+
