@@ -48,9 +48,11 @@
 # ifdef HAVE_STRUCT_PT_ALL_USER_REGS
 #  define pt_all_user_regs XXX_pt_all_user_regs
 # endif
+# define ptrace_peeksiginfo_args XXX_ptrace_peeksiginfo_args
 # include <linux/ptrace.h>
 # undef ia64_fpreg
 # undef pt_all_user_regs
+# undef ptrace_peeksiginfo_args
 #endif
 
 #if defined(SPARC64)
