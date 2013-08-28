@@ -3,12 +3,12 @@ BuildRequires:  libacl-devel
 BuildRequires:  libaio-devel
 BuildRequires:  lksctp-tools-devel
 BuildRequires:  xz
-Version:        4.7
+Version:        4.8
 Release:        0
 License:        BSD-3-Clause
 Summary:        A utility to trace the system calls of a program
 Url:            http://sourceforge.net/projects/strace/
-Group:          Development/Tools/Debuggers
+Group:          Development/Tools
 Source:         http://dl.sourceforge.net/strace/strace-%{version}.tar.xz
 Source2:        baselibs.conf
 Source1001: 	strace.manifest
@@ -24,8 +24,7 @@ cp %{SOURCE1001} .
 
 %build
 export CFLAGS="%{optflags}"
-%configure 
-
+%configure
 make %{?_smp_mflags}
 
 # Have to exclude make check for qemu builds, which apparently don't support PTRACE.
