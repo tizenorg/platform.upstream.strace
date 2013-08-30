@@ -1,0 +1,4 @@
+* Fri Aug 30 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130830.140633@495c884
+- fixed linux ptrace
+- Update to 4.8
+
