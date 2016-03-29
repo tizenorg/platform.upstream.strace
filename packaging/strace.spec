@@ -1,6 +1,5 @@
 Name:           strace
 BuildRequires:  libacl-devel
-BuildRequires:  libaio-devel
 BuildRequires:  lksctp-tools-devel
 BuildRequires:  xz
 Version:        4.9
